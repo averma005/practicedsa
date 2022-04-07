@@ -12,6 +12,7 @@ class sorting{
             for(int j=i+1; j<arr.length;j++){
                 if(arr[small] >arr[j])
                 small =j;
+                printer(arr);
             }
             int temp = arr[small];
             arr[small]= arr[i];
