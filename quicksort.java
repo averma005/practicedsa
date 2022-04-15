@@ -2,6 +2,7 @@ public class quicksort {
     public static void sort(int arr[], int low, int high) {
         if (low<high){
             int pivx = partition(arr,low,high);
+
             sort(arr, low, pivx-1);
             sort(arr, pivx+1, high);
         }
